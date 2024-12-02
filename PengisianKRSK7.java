@@ -40,7 +40,6 @@ public class PengisianKRSK7 {
         System.out.print("Masukkan NIM: ");
         String nim = sc.nextLine();
         int totalSKS = hitungTotalSKS(nim);
-
         while (true) {
             System.out.print("Masukkan Kode Mata Kuliah: ");
             String kodeMatkul = sc.nextLine();
