@@ -113,7 +113,7 @@ public class PengisianKRSK7 {
         }
     }
 
-    public static void analisisSKS() {
+    public static void analisisSKS() {   
         int jumlahMahasiswa = 0;
         for (int i = 0; i < dataKRS.length; i++) {
             if (dataKRS[i][0] != null) {
@@ -139,12 +139,22 @@ public class PengisianKRSK7 {
             sc.nextLine();
 
             switch (pilihan) {
-                case 1 -> tambahDataKRS();
-                case 2 -> tampilkanDataKRS();
-                case 3 -> analisisSKS();
-                case 4 -> System.out.println("Keluar Dari Program. Matur Suwun!");
-                default -> System.out.println("Pilihan Tidak Valid!");
-            }
+                case 1:
+                    tambahDataKRS();
+                    break;
+                case 2:
+                    tampilkanDataKRS();
+                    break;
+                case 3:
+                    analisisSKS();
+                    break;
+                case 4:
+                    System.out.println("Keluar Dari Program. Matur Suwun!");
+                    break;
+                default:
+                    System.out.println("Pilihan Tidak Valid!");
+                    break;
+            }            
         } while (pilihan != 4);
     }
 }
